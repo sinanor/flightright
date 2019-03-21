@@ -9,7 +9,7 @@ Spring boot is selected because it is easy to build application also it is easy 
 article endpoint.
 
 Design choices:
-1)Persistent class(Article) and Rest service request/response class (ArticleDTO) are different class. Spring framework allow even
+1)Persistent class(Member) and Rest service request/response class (MemberDTO) are different class. Spring framework allow even
 Repository methods expose themselves as a rest service with the @RepositoryRestResource annotation. But if would have chosen that approach
 then there will be less code to test. I suppose one purpose of the challange to show testing capabilities too. Besides it is good to
 seperate Controller, Repository and Persistent Object because they will give more flexibility to change/upgrade etc.
